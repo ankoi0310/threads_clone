@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:threads_clone/core/router/app_router.dart';
+import 'package:threads_clone/core/shared/utils/create_text_theme.dart';
 import 'package:threads_clone/core/theme/theme.dart';
-import 'package:threads_clone/core/utils/create_text_theme.dart';
-import 'package:threads_clone/features/feed/presentation/pages/feed_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -14,12 +14,11 @@ class MyApp extends StatelessWidget {
 
     final textTheme = createTextTheme(context, 'Manrope', 'Mitr');
     final theme = AppTheme(textTheme);
-    return MaterialApp(
+    return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
       title: 'Threads Clone',
-      theme: brightness == Brightness.light
-          ? theme.light()
-          : theme.dark(),
-      home: const FeedPage(),
+      theme: theme.dark(),
+      routerConfig: AppRouter.config,
     );
   }
 }

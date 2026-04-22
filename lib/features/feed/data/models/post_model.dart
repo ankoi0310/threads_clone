@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:threads_clone/core/utils/typedefs.dart';
+import 'package:threads_clone/core/shared/utils/typedefs.dart';
 import 'package:threads_clone/features/feed/domain/entities/post.dart';
 
 part 'post_model.freezed.dart';
