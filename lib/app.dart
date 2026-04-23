@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Threads Clone',
       theme: theme.dark(),
-      routerConfig: AppRouter.config,
+      routerConfig: config,
     );
   }
 }
