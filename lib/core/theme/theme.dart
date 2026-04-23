@@ -130,6 +130,9 @@ class AppTheme {
     useMaterial3: true,
     brightness: colorScheme.brightness,
     colorScheme: colorScheme,
+    splashColor: Colors.transparent,
+    splashFactory: NoSplash.splashFactory,
+    highlightColor: Colors.transparent,
 
     textTheme: textTheme.apply(
       bodyColor: colorScheme.onSurface,
